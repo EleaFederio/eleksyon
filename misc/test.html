@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script language=JavaScript> var max_count=2;
+var clickedData=new Array(false,false,false,false);
+function itemsClicked(){var i=0;for(var j=0;j<clickedData.length;j++)i+=clickedData[j]?1:0;return(i);}
+function itemClicked(t)
+{
+var check_this=true;
+var x=itemsClicked();
+if (x>=max_count && !clickedData[t])
+{
+check_this=false;
+}
+else
+{
+clickedData[t]=clickedData[t]?false:true;
+eval("document.test.check"+t+".clicked=false;");
+}
+return (check_this);
+}
+</script> 
+</head>
+
+<body>
+
+<form name=test action="castvote.php" method="get">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+<INPUT name=check1 type=checkbox value=Charity_profile onclick="return itemClicked(1)"> Item 1
+<INPUT name=check2 type=checkbox value=lost_found onclick="return itemClicked(2)"> Item 2
+<INPUT name=check3 type=checkbox value=fun_section onclick="return itemClicked(3)"> Item 3
+<INPUT name=check4 type=checkbox value=contacts onclick="return itemClicked(4)"> Item 4
+<input name="a" type="submit" value="a" />
+</form> 
+
+
+</body>
+</html>
