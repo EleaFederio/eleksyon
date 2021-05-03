@@ -1,5 +1,5 @@
 <?Php
-$con = mysql_connect("localhost", "root", "adminimo");
+$con = mysql_connect("localhost", "root", "");
 	if(!$con){
 		echo "unsuccessful connection";
 		die;

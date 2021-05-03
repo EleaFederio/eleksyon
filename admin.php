@@ -97,6 +97,7 @@ if ($uid!="00000001"){
 					$q = mysql_query("select `password` from `settings`");
 				  $pass = mysql_fetch_array($q);
 				  if($Password != $pass['password']){
+					//   Check if the old password is corect
 				  header("location:admin.php?error=2");
 				  die;
 				  }
