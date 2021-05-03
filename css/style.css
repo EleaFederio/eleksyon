@@ -7,7 +7,7 @@ BODY{
 }
 .table1, .td1, .th1{
 	border-collapse:collapse;
-	border: 1px solid #0000FF;
+	border: 1px solid #880522;
 	vertical-align:text-top;
 }
 .link{
@@ -15,7 +15,7 @@ text-decoration:none;
 }
 
 .table1, .td1, .th1{
-	border: 1px solid #006;
+	border: 1px solid rgb(122, 8, 8);
 	vertical-align:text-top;
 }
 
@@ -33,7 +33,7 @@ text-decoration:none;
 }
 
 .th1{
-	background-color:#0000FF;
+	background-color:#850909;
 	color:#FFF;
 	vertical-align:text-top;
 	}
@@ -61,7 +61,7 @@ text-decoration:none;
 	}
 	.btn-blue{
 	border-width: 1px;
-		border-color:blue;
+		border-color:rgb(107, 6, 14);
 		background-color:white;
 		color: black;
 	}
@@ -84,6 +84,12 @@ text-decoration:none;
 	font-weight:bold;
 	font-size:15px;
 	font-family:Arial;
+}
+.form-signin {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: auto;
 }
 	input[type=text],select.btn{
 		text-decoration:none;
